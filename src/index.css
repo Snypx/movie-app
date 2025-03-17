@@ -40,7 +40,7 @@
   }
 
   header {
-    @apply sm:mt-10 mt-5;
+    @apply sm:mt-5 mt-5;
   }
 
   header img {
@@ -49,6 +49,12 @@
 }
 
 @layer components {
+  .logo {
+    & img {
+      @apply w-[60px] max-w-lg h-auto object-contain mx-auto;
+    }
+  }
+
   .pattern {
     @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
   }
